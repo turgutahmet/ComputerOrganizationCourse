@@ -1,0 +1,293 @@
+vsim -gui work.processor
+# vsim -gui work.processor 
+# Start time: 23:38:28 on Jun 19,2021
+# Loading work.processor
+# Loading work.mult2_to_1_5
+# Loading work.mult2_to_1_32
+# Loading work.alu32
+# Loading work.adder
+# Loading work.control
+# Loading work.signext
+# Loading work.zeroextend
+# Loading work.alucont
+# Loading work.shift
+add wave -position insertpoint  \
+sim:/processor/pc \
+sim:/processor/clk \
+sim:/processor/statusReg \
+sim:/processor/datmem \
+sim:/processor/mem \
+sim:/processor/dataa \
+sim:/processor/datab \
+sim:/processor/out2 \
+sim:/processor/out3 \
+sim:/processor/out4 \
+sim:/processor/jalAddress \
+sim:/processor/out6 \
+sim:/processor/out7 \
+sim:/processor/out8 \
+sim:/processor/out9 \
+sim:/processor/out10 \
+sim:/processor/out11 \
+sim:/processor/sum \
+sim:/processor/extad \
+sim:/processor/zeroextended \
+sim:/processor/adder1out \
+sim:/processor/adder2out \
+sim:/processor/sextad \
+sim:/processor/inst31_26 \
+sim:/processor/inst25_21 \
+sim:/processor/inst20_16 \
+sim:/processor/inst15_11 \
+sim:/processor/out1 \
+sim:/processor/out5 \
+sim:/processor/inst15_0 \
+sim:/processor/instruc \
+sim:/processor/dpack \
+sim:/processor/gout \
+sim:/processor/zout \
+sim:/processor/pcsrc \
+sim:/processor/balrzorbltz \
+sim:/processor/nout \
+sim:/processor/negbltz \
+sim:/processor/balrzStatus \
+sim:/processor/jmStatusBalrz \
+sim:/processor/regdest \
+sim:/processor/alusrc \
+sim:/processor/memtoreg \
+sim:/processor/regwrite \
+sim:/processor/memread \
+sim:/processor/memwrite \
+sim:/processor/branch \
+sim:/processor/aluop1 \
+sim:/processor/aluop0 \
+sim:/processor/link31 \
+sim:/processor/jump \
+sim:/processor/balrz \
+sim:/processor/bltz \
+sim:/processor/jm \
+sim:/processor/extend \
+sim:/processor/sllv \
+sim:/processor/registerfile \
+sim:/processor/i \
+sim:/processor/jumpWire \
+sim:/processor/shiftLeftJump
+run
+# Instruction Memory[0]= 34  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 02  Data Memory[1]= 00   Register[1]= 00000001
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000005
+# Instruction Memory[3]= 01  Data Memory[3]= 01   Register[3]= 00000008
+# Instruction Memory[4]= xx  Data Memory[4]= 00   Register[4]= 00000010
+# Instruction Memory[5]= xx  Data Memory[5]= 00   Register[5]= 00000004
+# Instruction Memory[6]= xx  Data Memory[6]= 00   Register[6]= 00000005
+# Instruction Memory[7]= xx  Data Memory[7]= 05   Register[7]= xxxxxxxx
+# Instruction Memory[8]= xx  Data Memory[8]= 00   Register[8]= xxxxxxxx
+# Instruction Memory[9]= xx  Data Memory[9]= 00   Register[9]= xxxxxxxx
+# Instruction Memory[10]= xx  Data Memory[10]= 00   Register[10]= xxxxxxxx
+# Instruction Memory[11]= xx  Data Memory[11]= 10   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= 00   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= 00   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= 01   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= 00   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= 00   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= 00   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= 01   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= 10   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= 00   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= 00   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= 00   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= 25   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000000  SUM ffffffff   INST 34020001   REGISTER 00000010 00000004 00000005 00000001 
+#                   20PC 00000001  SUM xxxxxxxx   INST 020001xx   REGISTER 00000010 00000004 00000005 00000001 
+# Compile of adder.v was successful.
+# Compile of alu32.v was successful.
+# Compile of alucont.v was successful.
+# Compile of control.v was successful.
+# Compile of mult2_to_1_5.v was successful.
+# Compile of mult2_to_1_32.v was successful.
+# Compile of processor.v was successful.
+# Compile of shift.v was successful.
+# Compile of signext.v was successful.
+# Compile of zeroextend.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.processor
+# Loading work.mult2_to_1_5
+# Loading work.mult2_to_1_32
+# Loading work.alu32
+# Loading work.adder
+# Loading work.control
+# Loading work.signext
+# Loading work.zeroextend
+# Loading work.alucont
+# Loading work.shift
+run
+# Instruction Memory[0]= 34  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 02  Data Memory[1]= 00   Register[1]= 00000001
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000005
+# Instruction Memory[3]= 01  Data Memory[3]= 01   Register[3]= 00000008
+# Instruction Memory[4]= xx  Data Memory[4]= 00   Register[4]= 00000010
+# Instruction Memory[5]= xx  Data Memory[5]= 00   Register[5]= 00000004
+# Instruction Memory[6]= xx  Data Memory[6]= 00   Register[6]= 00000005
+# Instruction Memory[7]= xx  Data Memory[7]= 05   Register[7]= xxxxxxxx
+# Instruction Memory[8]= xx  Data Memory[8]= 00   Register[8]= xxxxxxxx
+# Instruction Memory[9]= xx  Data Memory[9]= 00   Register[9]= xxxxxxxx
+# Instruction Memory[10]= xx  Data Memory[10]= 00   Register[10]= xxxxxxxx
+# Instruction Memory[11]= xx  Data Memory[11]= 10   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= 00   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= 00   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= 01   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= 00   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= 00   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= 00   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= 01   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= 10   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= 00   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= 00   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= 00   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= 25   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000000  SUM ffffffff   INST 34020001   REGISTER 00000010 00000004 00000005 00000001 
+#                   20PC 00000001  SUM xxxxxxxx   INST 020001xx   REGISTER 00000010 00000004 00000005 00000001 
+restart -f
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 41  Data Memory[1]= 00   Register[1]= 00000001
+# Instruction Memory[2]= 18  Data Memory[2]= 00   Register[2]= 00000005
+# Instruction Memory[3]= 04  Data Memory[3]= 01   Register[3]= 00000008
+# Instruction Memory[4]= xx  Data Memory[4]= 00   Register[4]= 00000010
+# Instruction Memory[5]= xx  Data Memory[5]= 00   Register[5]= 00000004
+# Instruction Memory[6]= xx  Data Memory[6]= 00   Register[6]= 00000005
+# Instruction Memory[7]= xx  Data Memory[7]= 05   Register[7]= xxxxxxxx
+# Instruction Memory[8]= xx  Data Memory[8]= 00   Register[8]= xxxxxxxx
+# Instruction Memory[9]= xx  Data Memory[9]= 00   Register[9]= xxxxxxxx
+# Instruction Memory[10]= xx  Data Memory[10]= 00   Register[10]= xxxxxxxx
+# Instruction Memory[11]= xx  Data Memory[11]= 10   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= 00   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= 00   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= 01   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= 00   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= 00   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= 00   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= 01   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= 10   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= 00   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= 00   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= 00   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= 25   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000000  SUM 00000001   INST 00411804   REGISTER 00000010 00000004 00000005 00000001 
+#                   20PC 00000001  SUM xxxxxxxx   INST 411804xx   REGISTER 00000010 00000004 00000005 00000001 
+run
+#                   60PC 000004xx  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000010 00000004 00000005 00000001 
+# Load canceled
+restart -f
+run
+# Instruction Memory[0]= 04  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 20  Data Memory[1]= 00   Register[1]= 00000001
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000005
+# Instruction Memory[3]= 03  Data Memory[3]= 01   Register[3]= 00000008
+# Instruction Memory[4]= xx  Data Memory[4]= 00   Register[4]= 00000010
+# Instruction Memory[5]= xx  Data Memory[5]= 00   Register[5]= 00000004
+# Instruction Memory[6]= xx  Data Memory[6]= 00   Register[6]= 00000005
+# Instruction Memory[7]= xx  Data Memory[7]= 05   Register[7]= xxxxxxxx
+# Instruction Memory[8]= xx  Data Memory[8]= 00   Register[8]= xxxxxxxx
+# Instruction Memory[9]= xx  Data Memory[9]= 00   Register[9]= xxxxxxxx
+# Instruction Memory[10]= xx  Data Memory[10]= 00   Register[10]= xxxxxxxx
+# Instruction Memory[11]= xx  Data Memory[11]= 10   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= 00   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= 00   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= 01   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= 00   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= 00   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= 00   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= 01   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= 10   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= 00   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= 00   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= 00   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= 25   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000000  SUM 00000001   INST 04200003   REGISTER 00000010 00000004 00000005 00000001 
+# Compile of adder.v was successful.
+# Compile of alu32.v was successful.
+# Compile of alucont.v was successful.
+# Compile of control.v was successful.
+# Compile of mult2_to_1_5.v was successful.
+# Compile of mult2_to_1_32.v was successful.
+# Compile of processor.v was successful.
+# Compile of shift.v was successful.
+restart -f
+# Loading work.processor
+# Loading work.mult2_to_1_5
+# Loading work.mult2_to_1_32
+# Loading work.alu32
+# Loading work.adder
+# Loading work.control
+# Loading work.alucont
+# Loading work.shift
+# Compile of signext.v was successful.
+# Compile of zeroextend.v was successful.
+# 10 compiles, 0 failed with no errors.
+run
+# Instruction Memory[0]= 00  Data Memory[0]= 00   Register[0]= 00000000
+# Instruction Memory[1]= 22  Data Memory[1]= 00   Register[1]= 00000001
+# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000005
+# Instruction Memory[3]= 13  Data Memory[3]= 01   Register[3]= 00000008
+# Instruction Memory[4]= xx  Data Memory[4]= 00   Register[4]= 00000010
+# Instruction Memory[5]= xx  Data Memory[5]= 00   Register[5]= 00000004
+# Instruction Memory[6]= xx  Data Memory[6]= 00   Register[6]= 00000005
+# Instruction Memory[7]= xx  Data Memory[7]= 05   Register[7]= xxxxxxxx
+# Instruction Memory[8]= xx  Data Memory[8]= 00   Register[8]= xxxxxxxx
+# Instruction Memory[9]= xx  Data Memory[9]= 00   Register[9]= xxxxxxxx
+# Instruction Memory[10]= xx  Data Memory[10]= 00   Register[10]= xxxxxxxx
+# Instruction Memory[11]= xx  Data Memory[11]= 10   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= 00   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= 00   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= 01   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= 00   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= 00   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= 00   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= 01   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= 10   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= 00   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= 00   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= 00   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= 25   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= 00   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= 00   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= 01   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= 24   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000000  SUM fffffffc   INST 00220013   REGISTER 00000010 00000004 00000005 00000001 
+#                   20PC 00000005  SUM xxxxxxxx   INST xxxxxxxx   REGISTER 00000010 00000004 00000005 00000001 
+# End time: 23:52:27 on Jun 19,2021, Elapsed time: 0:13:59
+# Errors: 0, Warnings: 2
